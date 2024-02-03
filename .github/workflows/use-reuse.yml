@@ -74,6 +74,7 @@ jobs:
     secrets:
     #  some-secrets: ${{ secrets.some-secret }}
   print-deploying-result:
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Print deploy output
